@@ -1,0 +1,181 @@
+@charset 'utf-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  word-break: keep-all;
+  box-sizing: border-box;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-section {
+  background: url(images/KR-ko-20230605-popsignuptwoweeks-perspective_alpha_website_large.jpg) center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 35rem;
+}
+.welcome-section::before {
+  content: '';
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  min-height: 35rem;
+}
+
+.welcome-section .header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 5rem;
+}
+
+.welcome-section .header img {
+  width: auto;
+  height: 3rem;
+  margin-left: 1rem;
+  margin-right: auto;
+}
+
+#language-select {
+  height: 2rem;
+  margin-right: 0.5rem;
+  border-radius: 0.2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.login {
+  display: flex;
+  width: 4rem;
+  height: 2rem;
+  background-color: crimson;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.2rem;
+  margin-right: 1rem;
+}
+
+.welcome-section-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: calc(100% - 3rem);
+  margin: auto;
+  text-align: center;
+}
+
+.welcome-section-inner h1 {
+  font-size: 2rem;
+}
+
+.welcome-section-inner .start-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.welcome-section-inner input[type=email] {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid gray;
+  border-radius: 0.2rem;
+  color: white;
+  padding: 1rem;
+}
+
+.welcome-section-inner .start-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: crimson;
+  padding: 1rem;
+  border-radius: 0.2rem;
+}
+
+.membership-section {
+  position: relative;
+  background: radial-gradient( 120.35% 220% at 49.86% -6.29%, #e50914 0%, #0e1b4f 46.15%, #0d1121 100% );
+  padding: 2rem;
+  border-radius: 0.2rem;
+  text-align: left;
+  margin-top: 1rem;
+  width: calc(100% - 8rem);
+}
+
+.membership-section p:first-child {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.membership-section a:visited {
+  color: dodgerblue;
+}
+
+.tv-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 0.5rem solid #333;
+}
+
+.tv-section h1,p,img {
+  width: 90%;
+}
+
+.device-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 0.5rem solid #333;
+}
+
+.device-section h1,p,img {
+  width: 90%;
+}
+
+.kids-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 0.5rem solid #333;
+}
+
+.kids-section h1,p,img {
+  width: 90%;
+}
+
+.offline-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 0.5rem solid #333;
+}
+
+.offline-section h1,p,img {
+  width: 90%;
+}
