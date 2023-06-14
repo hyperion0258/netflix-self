@@ -124,7 +124,7 @@ body {
   font-weight: 500;
 }
 
-.membership-section a:visited {
+.membership-section a:link,a:visited {
   color: dodgerblue;
 }
 
@@ -135,10 +135,11 @@ body {
   align-items: center;
   text-align: center;
   border-bottom: 0.5rem solid #333;
+  width: 100%;
 }
 
 .tv-section h1,p,img {
-  width: 90%;
+  width: 80%;
 }
 
 .device-section {
@@ -148,10 +149,11 @@ body {
   align-items: center;
   text-align: center;
   border-bottom: 0.5rem solid #333;
+  width: 100%;
 }
 
 .device-section h1,p,img {
-  width: 90%;
+  width: 80%;
 }
 
 .kids-section {
@@ -161,10 +163,11 @@ body {
   align-items: center;
   text-align: center;
   border-bottom: 0.5rem solid #333;
+  width: 100%;
 }
 
 .kids-section h1,p,img {
-  width: 90%;
+  width: 80%;
 }
 
 .offline-section {
@@ -174,8 +177,43 @@ body {
   align-items: center;
   text-align: center;
   border-bottom: 0.5rem solid #333;
+  width: 100%;
 }
 
 .offline-section h1,p,img {
-  width: 90%;
+  width: 80%;
+}
+
+.faq-section {
+  width: 100%;
+  border-bottom: 0.5rem solid #333;
+}
+
+.faq-section-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 80%;
+  margin: auto;
+}
+
+.faq-section-inner h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.faq-section-inner .answer a:link,a:visited {
+  color: white;
+}
+
+.faq-item {
+  background-color: rgb(45, 45, 45);
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.answer {
+  display: none;
 }
