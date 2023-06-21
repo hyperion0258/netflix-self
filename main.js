@@ -1,5 +1,8 @@
 (() => {
-  let faqTarget = document.querySelector('')
-  function faqClick() {}
-  window.addEventListener('ready', faqClick);
+  function radioButton(target) {
+    console.log(target)
+  }
+  document.addEventListener("click", (event) => {
+    radioButton(event);
+  })
 })
