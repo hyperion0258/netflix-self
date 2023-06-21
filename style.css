@@ -215,5 +215,17 @@ body {
 }
 
 .answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  transition: max-height 0.5s;
+}
+
+input[name="faq-item"] {
   display: none;
+}
+
+input[name="faq-item"]:checked + label + .answer {
+  max-height: 30rem;
+  padding: 1.5rem;
 }
